@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 flex items-center justify-center min-h-screen">
+  
+  <div class="bg-neutral-950 text-amber-50 p-8 rounded-lg w-full max-w-lg shadow-lg">
+    <h2 class="text-2xl font-bold text-center mb-6 text-yellow-400">Registration Form</h2>
+    
+    <form id="registration-form" action="insert.php" method="POST">
+      
+      <div class="mb-4">
+        <label for="username" class="block text-white mb-1 font-medium">Username</label>
+        <input type="text" id="username" name="username" class="w-full p-3 bg-neutral-800 rounded-md text-white shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-transform transform hover:scale-105" placeholder="Enter your username" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="nickname" class="block text-white font-medium mb-1">Nickname</label>
+        <input type="text" id="nickname" name="nickname" class="w-full p-3 bg-neutral-800 rounded-md text-white shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-transform transform hover:scale-105" placeholder="Enter your nickname" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-white mb-1 font-medium">User Email</label>
+        <input type="email" id="email" name="email" class="w-full p-3 bg-neutral-800 rounded-md text-white shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-transform transform hover:scale-105" placeholder="Enter your email" required>
+      </div>
+
+      <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 transform hover:scale-105">
+        Submit
+      </button>
+      
+    </form>
+
+    <!-- Show Data Button -->
+    <a href="show_data.php" class="block mt-4 w-full text-center p-3 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-600 transition-transform transform hover:scale-105">
+      Show Data
+    </a>
+  </div>
+</body>
+</html>
